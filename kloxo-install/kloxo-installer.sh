@@ -185,7 +185,8 @@ echo -e "	When it's finished, you will be presented with a welcome message and f
 read -n 1 -p "Press any key to continue ..."
 
 # Start install
-yum -y install php php-mysql wget zip unzip
+#installing epel-release to make a few packages installable & mysql repo for later use to install mysql server(by Amit Kumar Mishra)
+yum -y install epel-release php php-mysql wget zip unzip http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
 export PATH=/usr/sbin:/sbin:$PATH
 
 if [ -d "../.git" ]; then
