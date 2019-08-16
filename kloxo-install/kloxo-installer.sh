@@ -186,7 +186,8 @@ read -n 1 -p "Press any key to continue ..."
 
 # Start install
 #installing epel-release to make a few packages installable & mysql repo for later use to install mysql server(by Amit Kumar Mishra)
-yum -y install epel-release php php-mysql wget zip unzip http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+yum -y install epel-release php php-mysql wget zip unzip 
+yum -y install http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
 export PATH=/usr/sbin:/sbin:$PATH
 
 if [ -d "../.git" ]; then
