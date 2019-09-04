@@ -91,8 +91,7 @@ function lxins_main()
 		exec("rpm -e --nodeps $package > /dev/null 2>&1");
 	}
 
-	$packages = array("php-mbstring", "php-mysql", "which", "gcc-c++", "php-imap", "php-pear", "php-devel", "kloxo-core-lighttpd", "httpd", "mod_ssl", "zip", "unzip", "kloxo-core-php", "mariadb",
-						"mariadb-server", "curl", "autoconf", "automake", "libtool", "bogofilter", "gcc", "cpp", "openssl", "pure-ftpd", "yum-protectbase");
+	$packages = array("php-mbstring", "php-mysql", "which", "gcc-c++", "php-imap", "php-pear", "php-devel", "kloxo-core-lighttpd", "httpd", "mod_ssl", "zip", "unzip", "kloxo-core-php", "mariadb", "mariadb-server", "curl", "autoconf", "automake", "libtool", "bogofilter", "gcc", "cpp", "openssl", "pure-ftpd", "yum-protectbase");
 
 	$list = implode(" ", $packages);
 
